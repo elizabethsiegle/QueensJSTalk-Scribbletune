@@ -5,6 +5,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const scribble = require('scribbletune');
 var textarr = []
+
 app.use(bodyParser());
 app.post('/', (req, res) => {
   const twiml = new MessagingResponse();
@@ -48,10 +49,13 @@ app.post('/', (req, res) => {
 	pattern: 'x_x_x_--'.repeat(2),
 	sizzle: true
 });  
+
  // console.log(chords);
 
 scribble.midi(chords, 'chords.mid');
 });
+
+//extra bass
 bass = scribble.clip({
   notes: scribble.scale('a', 'minor', 2).slice(0, 3),
   pattern: '--x-'.repeat(4),
