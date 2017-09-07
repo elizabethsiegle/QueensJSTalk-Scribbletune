@@ -1,6 +1,7 @@
 ### Introduction
 Text a Twilio number a music note (A-G), and make music with Node.JS! Check out the Node module [ScribbleTune](https://github.com/walmik/scribbletune).
 To get started with Twilio in Node.js, check out the [documentation](https://www.twilio.com/docs/guides/how-to-receive-and-reply-in-node-js#what-is-a-webhook).
+For full list of talks, check out my [talks repo](https://github.com/elizabethsiegle/talks).
 
 ### Developer Environment
 Twilio needs to send requests to your Node app and Ngrok lets us do this. Install <a href = "https://ngrok.com/">it</a> if you haven’t already. Once that’s done, run the following command in your terminal in the directory you’ll put your code in.
